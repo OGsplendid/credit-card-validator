@@ -1,0 +1,42 @@
+{
+  "name": "credit-card-validator",
+  "version": "1.0.0",
+  "repository": {
+    "url": "git@github.com:OGsplendid/credit-card-validator"
+  },
+  "description": "credit-card-validator",
+  "main": "index.js",
+  "author": "Vladimir Sivakov <vladimir.a.sivakov@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "make": "http-server ./dist",
+    "lint": "eslint .",
+    "test": "jest --env=jsdom",
+    "build": "webpack --mode=development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "babel": "^6.23.0",
+    "babel-jest": "^29.6.2",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.46.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "gh-pages": "^6.0.0",
+    "html-webpack-plugin": "^5.5.3",
+    "http-server": "^14.1.1",
+    "jest": "^29.6.2",
+    "jest-environment-jsdom": "^29.6.4",
+    "mini-css-extract-plugin": "^2.7.6",
+    "puppeteer": "^21.1.1",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.22.9"
+  }
+}
